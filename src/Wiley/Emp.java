@@ -1,3 +1,5 @@
+package Wiley;
+
 import java.util.*;
 
 public class Emp {
@@ -26,7 +28,7 @@ class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" +
+        return "Wiley.Employee{" +
                 "eid='" + eid + '\'' +
                 ", sal=" + sal +
                 ", address='" + address + '\'' +
