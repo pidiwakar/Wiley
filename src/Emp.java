@@ -14,9 +14,7 @@ public class Emp {
         l.add(e4);
         l.add(e5);
 
-        Collections.sort(l,new EmpSalComp());
-        Collections.sort(l,new EmpAddComp());
-        Collections.sort(l,new EmpIdComp());
+        Collections.sort(l,new EmpComp());
         System.out.println(l);
     }
 }
@@ -41,6 +39,21 @@ class Employee {
         address=add;
     }
 
+}
+
+class EmpComp implements Comparator{
+    @Override
+    public int compare(Object o1, Object o2) {
+        Employee e1 = (Employee) o1;
+        Employee e2 = (Employee) o1;
+        int res = e1.eid.compareTo(e2.eid);
+        if(res!=0)
+            return res;
+        res=e1.address.compareTo(e2.address);
+        if (res!=0)
+            return res;
+        return e1.sal-e2.sal;
+    }
 }
 
 class EmpIdComp implements Comparator {
