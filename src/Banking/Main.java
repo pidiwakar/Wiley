@@ -2,10 +2,14 @@ package Banking;
 
 public class Main {
     public static void main(String[] args) {
-        Customer c = new Customer(12345678,"Piyush",10000);
-        c.deposit(500);
-        System.out.println(c.getBalance());
-        c.withdraw(2000);
-        System.out.println(c.getBalance());
+
+        List<Customer> l = new ArrayList<>();
+        l.add(new Customer(12341238,"Piyush",10000));
+        l.add(new Customer(18975678,"Rahul",12000));
+        l.add(new Customer(12345668,"Gattu",18000));
+        l.add(new Customer(12345670,"Mohit",10060));
+
+
+
     }
 }
