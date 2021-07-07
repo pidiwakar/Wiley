@@ -1,0 +1,5 @@
+* create a customer class with private attributes a/c no, name and balance
+* appropriate getter and setter
+* deposit method to deposit balance into the account and update the account balance accodingly.
+* withdraw method should reduce the ac balance by the amount withdrawn.
+* database to store the information of the customers(temporarily we can use list to store for the session)
