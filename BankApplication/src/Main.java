@@ -18,7 +18,7 @@ public class Main {
         c3.withdraw(1200);
         c3.withdraw(100000);
 
-        System.out.println(Customer.getCustomerList());
+        Customer.getCustomerList().stream().forEach(System.out::println);
 
 
     }
