@@ -3,7 +3,7 @@ package Custom;
 class Stk {
     private final int MAX_SIZE=100;
     int top;
-    private int[] ele=new int[MAX_SIZE];
+    int[] ele=new int[MAX_SIZE];
 
     public Stk() {
         top=-1;
