@@ -1,0 +1,8 @@
+create table project(pid int primary key, name varchar(20), budget int);
+create table employee(eid int primary key, name varchar(20), email varchar(20), pid int ,foreign key(pid) references project(pid));
+
+// insert values;
+
+select eid, e.name from employee e inner join project p on e.pid=p.pid; //select employees associated with projects using joins
+select eid, e.name from employee e where e.pid in (select pid from project); // using inner queries
+
