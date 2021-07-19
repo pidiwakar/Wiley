@@ -6,7 +6,8 @@ import java.util.Map;
 
 class MaintainTransac {
     Map<Acc,List<Transaction>> m = new HashMap<>();
-    //int[] den = new int[2];
+    //static long[] den = {500000,200000,100000,50000};
+
 
     public void deposit(Acc acc,long amt) {
         acc.transactions.add(new Transaction("credit",acc.balance,acc.balance+amt));
